@@ -96,6 +96,14 @@ class List
     end
   end
 
+  # get array
+  # ["monster", "gogotea", "protein"]
+  def show_buyable_list(vending)
+    get_buyable_list(vending).keys.map(&:to_s)
+  end
+
+  private
+
   # get hash like below
   # {:monster=>#<Juice:0x00007fc29b03fc40 @name="monster", @price=210, @stock=5>,
   # :gogotea=>#<Juice:0x00007fc29b03fa10 @name="gogotea", @price=120, @stock=6>,
@@ -104,11 +112,5 @@ class List
     @list.select do |_key, value|
       value.price <= vending.slot_money && value.stock.positive?
     end
-  end
-
-  # get array
-  # ["monster", "gogotea", "protein"]
-  def show_buyable_list(vending)
-    get_buyable_list(vending).keys.map(&:to_s)
   end
 end

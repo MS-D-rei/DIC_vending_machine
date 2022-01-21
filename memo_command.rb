@@ -4,7 +4,7 @@ vm.insert_money(500)
 juices = List.new
 
 juices.initialize_stock
-p juices.keys
+p juices.list
 
 juices.add_stock(name: 'greentea', price: 150, stock: 8)
 p juices.list
