@@ -38,6 +38,8 @@ class VendingMachine
     end
   end
 
+  private
+
   # ask to input juice name and make it symbol
   def select_juice(buyable_list)
     p 'You can buy from the list below'

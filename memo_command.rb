@@ -4,21 +4,21 @@ vm.insert_money(500)
 juices = List.new
 
 juices.initialize_stock
-p juices.list
+juices.list
 
 juices.add_stock(name: 'greentea', price: 150, stock: 8)
-p juices.list
+juices.list
 
 juices.add_stock(name: 'gogotea', price: 130, stock: 4)
-p juices.list
+juices.list
 
 juices.delete_stock(name: 'monster')
-p juices.list
+juices.list
 
-p juices.show_buyable_list(vm)
+juices.show_buyable_list(vm)
 
 vm.buy(juices)
 
-p vm.sales
-p juices.stocks
-p juices.show_buyable_list(vm)
+vm.sales
+juices.stocks
+juices.show_buyable_list(vm)
