@@ -8,9 +8,10 @@ p juices.keys
 
 juices.add_stock(name: 'greentea', price: 150, stock: 8)
 p juices.list
-# if input wrong price
+
 juices.add_stock(name: 'gogotea', price: 130, stock: 4)
 p juices.list
+
 juices.delete_stock(name: 'monster')
 p juices.list
 

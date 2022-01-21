@@ -18,7 +18,7 @@ class VendingMachine
   end
 
   def return_money
-    p "return #{@slot_money}"
+    p "return #{@slot_money} yen"
     @slot_money = 0
   end
 
@@ -86,10 +86,6 @@ class List
 
   def delete_stock(name:)
     @list.delete(name.to_sym)
-  end
-
-  def keys
-    @list.keys
   end
 
   # show juice and its stock
